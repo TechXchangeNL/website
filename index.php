@@ -10,9 +10,9 @@
     $color = $colors[ ($version * $serial * 2) % 8 ];
     echo '<div style="color:', $color, ';">';
 
-    echo '<h1>Welcome DICTU</h1>';
+    echo '<h1>Welcome Dreamteam!!</h1>';
 
-    echo '<h2>Website deployed using Ansible Automation Platform</h2>';
+    echo '<h2>Website deployed using Ansible Automation Platform and Hashicorp Terraform Cloud</h2>';
 
     echo '<h3>Served to you from webserver: <span>', $fqdn, ' (config version: ', $version, ')</span></h3>';
 
