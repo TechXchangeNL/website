@@ -110,26 +110,26 @@
             Deployed using HCP Terraform and Ansible Automation Platform. <br /> <a
                 href="https://www.hashicorp.com/en/blog/hashicorp-and-red-hat-better-together/" target="_blank">HashiCorp and RedHat: Better Together!</a>
         </div>
-  <?php
-    header("Refresh: 1; url=$page");
-    $website_config = parse_ini_file("/etc/ansible/facts.d/webserver.fact");
-    $fqdn = gethostname();
-    $version = $website_config['version'];
-    $serial = $website_config['serial'];
-    $colors = ["red","green","blue","purple","teal","fuchsia","coral","olive","navy"];
-    $color = $colors[ ($version * $serial * 2) % 8 ];
-    echo '<div style="color:', $color, ';">';
+<?php
+header("Refresh: 1; url=$page");
+$website_config = parse_ini_file("/etc/ansible/facts.d/webserver.fact");
+$fqdn = gethostname();
+$version = $website_config['version'];
+$serial = $website_config['serial'];
+$colors = ["red","green","blue","purple","teal","fuchsia","coral","olive","navy"];
+$color = $colors[ ($version * $serial * 2) % 8 ];
+echo '<div style="color:', $color, ';">';
 
-    echo '<h1>Welcome Dreamteam!!</h1>';
+echo '<h1>Welcome Dreamteam!!</h1>';
 
-    echo '<h2>Website deployed using Ansible Automation Platform and Hashicorp Terraform Cloud</h2>';
+echo '<h2>Website deployed using <img src="./resources/aap.png"/> and <img src="./resources/HCP-Terraform.png"/></h2>';
 
-    echo '<h3>Served to you from webserver: <span>', $fqdn, ' (config version: ', $version, ')</span></h3>';
+echo '<h3>Served to you from webserver: <span>', $fqdn, ' (config version: ', $version, ')</span></h3>';
 
-    echo '</div>';
-  ?>
+echo '</div>';
+?>
         <div class="isi">
-            Made with <img src="./resources/heart.png" alt="HashiCorp" style="width: 18px;"> by HashiCorp Value Engineering
+            Made with <img src="./resources/heart.png" alt="HashiCorp" style="width: 18px;"> by HashiCorp & Red Hat
         </div>
      </div>
 </body>
