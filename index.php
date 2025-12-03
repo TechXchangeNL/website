@@ -104,6 +104,7 @@
      <div class="text-wrapper">
         <div class="title" data-content="404">
             <img src="./resources/logo.png" alt="HashiCorp" style="width: 300px;">
+            <img src="./resources/logo-redhat-a-reverse-rgb.png" alt="RedHat" style="width: 300px;">
         </div>
 
         <div class="subtitle">
