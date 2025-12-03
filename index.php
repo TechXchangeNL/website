@@ -111,7 +111,7 @@
                 href="https://www.hashicorp.com/en/blog/hashicorp-and-red-hat-better-together/" target="_blank">HashiCorp and RedHat: Better Together!</a>
         </div>
 <?php
-header("Refresh: 1; url=$page");
+header("Refresh: 2; url=$page");
 $website_config = parse_ini_file("/etc/ansible/facts.d/webserver.fact");
 $fqdn = gethostname();
 $version = $website_config['version'];
